@@ -22,6 +22,7 @@
 		5C449411185E365F00C63661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C449410185E365F00C63661 /* Main.storyboard */; };
 		5C449414185E805900C63661 /* ENGAddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C449413185E805900C63661 /* ENGAddToDoItemViewController.m */; };
 		5C44941A185E81DE00C63661 /* ENGToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C449419185E81DE00C63661 /* ENGToDoListViewController.m */; };
+		5C99B3E71861575C001680B7 /* ENGToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99B3E61861575C001680B7 /* ENGToDoItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +53,12 @@
 		5C449404185E310100C63661 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C449406185E310100C63661 /* HoneyDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HoneyDoListTests.m; sourceTree = "<group>"; };
 		5C449410185E365F00C63661 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		5C449412185E805900C63661 /* ENGAddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENGAddToDoItemViewController.h; sourceTree = "<group>"; };
-		5C449413185E805900C63661 /* ENGAddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENGAddToDoItemViewController.m; sourceTree = "<group>"; };
+		5C449412185E805900C63661 /* ENGAddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ENGAddToDoItemViewController.h; path = ../ENGAddToDoItemViewController.h; sourceTree = "<group>"; };
+		5C449413185E805900C63661 /* ENGAddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ENGAddToDoItemViewController.m; path = ../ENGAddToDoItemViewController.m; sourceTree = "<group>"; };
 		5C449418185E81DE00C63661 /* ENGToDoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENGToDoListViewController.h; sourceTree = "<group>"; };
 		5C449419185E81DE00C63661 /* ENGToDoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENGToDoListViewController.m; sourceTree = "<group>"; };
+		5C99B3E51861575C001680B7 /* ENGToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENGToDoItem.h; sourceTree = "<group>"; };
+		5C99B3E61861575C001680B7 /* ENGToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENGToDoItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +88,6 @@
 		5C4493D5185E310000C63661 = {
 			isa = PBXGroup;
 			children = (
-				5C449412185E805900C63661 /* ENGAddToDoItemViewController.h */,
-				5C449413185E805900C63661 /* ENGAddToDoItemViewController.m */,
 				5C4493E7185E310000C63661 /* HoneyDoList */,
 				5C449400185E310100C63661 /* HoneyDoListTests */,
 				5C4493E0185E310000C63661 /* Frameworks */,
@@ -117,11 +118,15 @@
 		5C4493E7185E310000C63661 /* HoneyDoList */ = {
 			isa = PBXGroup;
 			children = (
+				5C449412185E805900C63661 /* ENGAddToDoItemViewController.h */,
+				5C449413185E805900C63661 /* ENGAddToDoItemViewController.m */,
 				5C4493F0185E310000C63661 /* ENGAppDelegate.h */,
 				5C4493F1185E310000C63661 /* ENGAppDelegate.m */,
 				5C449410185E365F00C63661 /* Main.storyboard */,
 				5C449418185E81DE00C63661 /* ENGToDoListViewController.h */,
 				5C449419185E81DE00C63661 /* ENGToDoListViewController.m */,
+				5C99B3E51861575C001680B7 /* ENGToDoItem.h */,
+				5C99B3E61861575C001680B7 /* ENGToDoItem.m */,
 				5C4493F3185E310000C63661 /* Images.xcassets */,
 				5C4493E8185E310000C63661 /* Supporting Files */,
 			);
@@ -257,6 +262,7 @@
 				5C449414185E805900C63661 /* ENGAddToDoItemViewController.m in Sources */,
 				5C44941A185E81DE00C63661 /* ENGToDoListViewController.m in Sources */,
 				5C4493EE185E310000C63661 /* main.m in Sources */,
+				5C99B3E71861575C001680B7 /* ENGToDoItem.m in Sources */,
 				5C4493F2185E310000C63661 /* ENGAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +464,7 @@
 				5C44940C185E310100C63661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C44940D185E310100C63661 /* Build configuration list for PBXNativeTarget "HoneyDoListTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +473,7 @@
 				5C44940F185E310100C63661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

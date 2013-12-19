@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "ENGToDoItem.h"
+
 @interface ENGAddToDoItemViewController : UIViewController
+
+@property ENGToDoItem *toDoItem;
 
 @end
